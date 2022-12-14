@@ -1,0 +1,292 @@
+@font-face {
+  font-family: roboto;
+  src: url("./font/IRANSansWeb\(FaNum\)_Light.ttf");
+}
+* {
+  margin: 0;
+  font-family: roboto;
+  user-select: none;
+}
+.nav-item .nav-link {
+  font-size: 95%;
+  color: #3f3f3f;
+}
+header {
+  top: 0 !important;
+  right: 0 !important;
+  z-index: 2;
+}
+body {
+  height: 300vh;
+  max-width: 1700px !important;
+}
+.span_in_ofcanvas {
+  text-decoration: none;
+  color: #00d16f;
+  font-size: 13px;
+}
+.accordion-button:focus {
+  background-color: #fff;
+}
+.accordion-button {
+  color: #00d16f !important;
+  font-weight: bold;
+  background-color: #fff !important;
+  transition: 0.2s;
+}
+.accordion-button::after {
+  display: none !important;
+}
+.bi-chevron-down {
+  font-size: 20px !important;
+  font-weight: bold;
+}
+.snapp-pwa {
+  width: 23px;
+  height: 23px;
+}
+.collapse-link,
+.collapse-link:hover {
+  color: black;
+  text-decoration: none;
+}
+main {
+  position: relative !important;
+  top: 0px !important;
+}
+.boldpheader_section2 {
+  font-size: 36px !important;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 55px;
+}
+.paragraph_section2 {
+  font-size: 19px !important;
+  text-align: justify;
+  margin: 25px 0px 25px 0px;
+}
+.phone_numberd_box_section2 {
+  align-self: center;
+}
+.phone_numberd_box_section2 a {
+  color: #00d16f;
+  background-color: #fff;
+  text-decoration: none;
+  padding: 10px 25px 10px 25px;
+  border-radius: 6px;
+  font-weight: bold !important;
+  font-size: 14px;
+  align-self: flex-start;
+}
+.phone_numberd_box_section2 a:hover {
+  color: #00d16f;
+}
+.phone_textbox {
+  border-bottom: 1px solid rgba(255, 255, 255, 70%);
+  padding: 8px;
+}
+.phone_textbox input {
+  background: none;
+  border-style: none;
+  outline-style: none;
+  color: #fff;
+  font-size: 14px;
+}
+.phone_textbox input::placeholder {
+  color: rgba(255, 255, 255, 75%) !important;
+}
+.phone_textbox i {
+  font-size: 12px;
+}
+.bi-x-circle-fill {
+  font-size: 12px !important;
+  display: none;
+  color: black !important;
+  cursor: pointer;
+}
+.gotoapp {
+  color: #00d16f;
+  text-decoration: none;
+  padding: 10px 25px 10px 25px;
+  border-radius: 6px;
+  font-weight: bold !important;
+  font-size: 14px;
+  align-self: flex-start;
+  background: none !important;
+  color: #fff !important;
+  border: 1px solid #fff !important;
+  text-align: center;
+  width: 100%;
+  transition: 0.2s;
+}
+.gotoapp:hover {
+  background-color: rgba(255, 255, 255, 10%) !important;
+}
+.paragraph_box {
+  background-color: #21aa58 !important;
+  color: #fff;
+  padding-right: 100px !important;
+  padding-left: 24px !important;
+}
+.section3 {
+  padding: 60px !important;
+}
+.section3 a {
+  width: 20% !important;
+  margin: 0px 20px !important;
+}
+.section3 a img {
+  width: 100% !important;
+}
+/* .section4 .container{
+  padding: 40px 85px !important;
+} */
+.section4_header {
+  font-weight: bold;
+  text-align: center;
+}
+.section4 {
+  background-color: #f2f5f8 !important;
+}
+.section4 .row .col-4 a {
+  /* width: 85% !important; */
+  text-decoration: none !important;
+  background-color: #fff;
+  border-radius: 18px !important;
+}
+.section4 .row .col-4 a h6 {
+  color: black;
+  font-weight: bold;
+}
+.section4 .row .col-4 a p {
+  color: #a3a3a3 !important;
+  text-align: right !important;
+  font-size: 14px !important;
+  margin: 0px !important;
+}
+.cover {
+  display: none;
+}
+.seemorebtn {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .boldpheader_section2 {
+    font-size: 28px !important;
+    word-spacing: 0px !important;
+  }
+  .paragraph_section2 {
+    font-size: 19px !important;
+    margin: 5px 0px !important;
+  }
+  .paragraph_box {
+    padding: 20px !important;
+  }
+  .section4 .row .col-4 a {
+    flex-direction: column !important;
+    padding-top: 12px !important;
+    padding-bottom: 0px !important;
+  }
+  .section4 .row .col-4 a div {
+    margin: 5px 0px;
+  }
+  .section4 .row .col-4 a p {
+    display: none !important;
+  }
+  .section4 .row .col-4 a div h6 {
+    text-align: center !important;
+    margin: 8px 0px 8px 0px !important;
+  }
+  .section4 .row .col-4 a img{
+    margin: 0px !important;
+  }
+  .section4 {
+    transition: 1s;
+    height: 94vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  .cover {
+    display: block;
+    width: 100% !important;
+    height: 200px !important;
+    position: absolute !important;
+    bottom: 0px !important;
+    background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 94%),
+      rgba(255, 255, 255, 45%),
+      rgba(255, 255, 255, 10%)
+    );
+  }
+  .seemorebtn {
+    display: block;
+    position: absolute;
+    bottom: 0px !important;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: #fff;
+    border: 2px solid rgb(0, 209, 112);
+    color: rgb(0, 209, 112);
+  }
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape) {
+  .paragraph_box {
+    padding: 20px !important;
+  }
+  .paragraph_box a {
+    font-size: 17px !important;
+  }
+  .section4 .row .col-4 a {
+    flex-direction: column !important;
+    justify-content: center;
+  }
+  .section4 .row .col-4 a p {
+    display: none !important;
+  }
+  .section4 .row .col-4 a {
+    flex-direction: column !important;
+    padding: 10px 20px 0px 20px !important ;
+  }
+  .section4 .row .col-4 a div h6 {
+    margin: 8px 0px 8px 0px;
+  }
+  .section4 {
+    transition: 1s;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  .section4 .row .col-4 a img{
+    margin: 0px !important;
+  }
+  .cover {
+    display: block;
+    width: 100% !important;
+    height: 200px !important;
+    position: absolute !important;
+    bottom: 0px !important;
+    background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 90%),
+      rgba(255, 255, 255, 45%),
+      rgba(255, 255, 255, 10%)
+    );
+  }
+  .seemorebtn {
+    display: block;
+    position: absolute;
+    bottom: 10px !important;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: #fff;
+    border: 2px solid rgb(0, 209, 112);
+    color: rgb(0, 209, 112);
+  }
+}
