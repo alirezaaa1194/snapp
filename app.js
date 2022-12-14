@@ -6,6 +6,8 @@ let count = true;
 let phone = document.getElementById("phone");
 let fillcircle = document.getElementById("fillcircle");
 let xcircle = document.getElementById("xcircle");
+let seemorebtn = document.getElementById("seemorebtn");
+let section4 = document.getElementById("section4");
 function checkinputvalue1() {
   if (phone.value.length > 0) {
     fillcircle.style.display = "none";
@@ -35,11 +37,13 @@ acbutton.addEventListener("click", function a() {
     count = true;
   }
 });
-
-let seemorebtn = document.getElementById("seemorebtn");
-let section4 = document.getElementById("section4");
-seemorebtn.addEventListener("click", function bgn() {
-  section4.style.height = "1350px";
-  seemorebtn.style.display = "none";
-  cover.style.display = "none";
-});
+  seemorebtn.addEventListener("click", function bgn() {
+    if(window.matchMedia("(orientation:landscape)").matches){
+      section4.style.height = "1200px";    
+    }
+    else{
+      section4.style.height = "1300px";
+    }
+    seemorebtn.style.display = "none";
+    cover.style.display = "none";
+  });
