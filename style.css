@@ -92,6 +92,14 @@ main {
   color: #fff;
   font-size: 14px;
 }
+/* .phone_textbox input:-webkit-autofill,
+.phone_textbox input:-webkit-autofill:hover, 
+.phone_textbox input:-webkit-autofill:focus, 
+.phone_textbox input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    
+
+} */
 .phone_textbox input::placeholder {
   color: rgba(255, 255, 255, 75%) !important;
 }
@@ -138,18 +146,18 @@ main {
 .section3 a img {
   width: 100% !important;
 }
-/* .section4 .container{
-  padding: 40px 85px !important;
-} */
 .section4_header {
   font-weight: bold;
   text-align: center;
 }
 .section4 {
   background-color: #f2f5f8 !important;
+  padding: 35px 0px 45px 0px;
+}
+.section4 .container{
+  width: 80% !important;
 }
 .section4 .row .col-4 a {
-  /* width: 85% !important; */
   text-decoration: none !important;
   background-color: #fff;
   border-radius: 18px !important;
@@ -170,7 +178,37 @@ main {
 .seemorebtn {
   display: none;
 }
-
+.carousel-inner{
+  border-radius: 9px !important;
+}
+.section5{
+  padding:60px !important;
+}
+.carousel-indicators{
+  height: 20px !important;
+  position: absolute !important;
+  bottom: -10px !important;
+}
+.carousel-indicators .aaa{
+  display: inline-block;
+  padding:0px 4px !important;
+  height: 20px !important;
+  background-color: rgba(0,0,0,18%) !important;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-indicators button{
+width: 9px !important;
+height: 9px !important;
+border-radius: 50% !important;
+margin:0 3px !important;
+transition: opacity .3s ease !important;
+}
+.carousel-item{
+  transition: transform .3s ease-in-out !important;
+}
 @media screen and (max-width: 700px) {
   .boldpheader_section2 {
     font-size: 28px !important;
@@ -208,6 +246,9 @@ main {
     display: flex;
     justify-content: center;
   }
+  .section4 .container{
+    width: 100% !important;
+  }
   .cover {
     display: block;
     width: 100% !important;
@@ -240,6 +281,9 @@ main {
   }
   .paragraph_box a {
     font-size: 17px !important;
+  }
+  .section4 .container{
+    width: 100% !important;
   }
   .section4 .row .col-4 a {
     flex-direction: column !important;
