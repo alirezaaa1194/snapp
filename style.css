@@ -188,6 +188,7 @@ main {
   height: 20px !important;
   position: absolute !important;
   bottom: -10px !important;
+  z-index: 1 !important;
 }
 .carousel-indicators .aaa{
   display: inline-block;
@@ -223,8 +224,9 @@ transition: opacity .3s ease !important;
   }
   .section4 .row .col-4 a {
     flex-direction: column !important;
-    padding-top: 12px !important;
+    padding-top: 8px !important;
     padding-bottom: 0px !important;
+    width: 100% !important;
   }
   .section4 .row .col-4 a div {
     margin: 5px 0px;
@@ -261,6 +263,8 @@ transition: opacity .3s ease !important;
       rgba(255, 255, 255, 45%),
       rgba(255, 255, 255, 10%)
     );
+
+/* background: linear-gradient(to top, rgba(255,255, 255, 94%), rgba(255,255,255 ,65%), rgba(255,255,255, 17%) ,rgba(0,0,0,0%) ); */
   }
   .seemorebtn {
     display: block;
@@ -272,6 +276,15 @@ transition: opacity .3s ease !important;
     background-color: #fff;
     border: 2px solid rgb(0, 209, 112);
     color: rgb(0, 209, 112);
+  }
+  .section5{
+    padding: 30px !important;
+  }
+  .carousel-inner{
+    transform: scaleY(130%) !important;
+  }
+  .carousel-indicators{
+    bottom: -25px !important;
   }
 }
 
@@ -332,5 +345,11 @@ transition: opacity .3s ease !important;
     background-color: #fff;
     border: 2px solid rgb(0, 209, 112);
     color: rgb(0, 209, 112);
+  }
+  .carousel-inner{
+    transform: scale(170%) !important;
+  }
+  .carousel-indicators{
+    bottom: -50px !important;
   }
 }

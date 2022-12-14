@@ -1,5 +1,7 @@
 let acbutton = document.getElementById("acbutton");
 let icon = document.getElementById("icon");
+let cover = document.getElementById("cover");
+let body = document.body;
 let count = true;
 let phone = document.getElementById("phone");
 let fillcircle = document.getElementById("fillcircle");
@@ -37,6 +39,7 @@ acbutton.addEventListener("click", function a() {
 let seemorebtn = document.getElementById("seemorebtn");
 let section4 = document.getElementById("section4");
 seemorebtn.addEventListener("click", function bgn() {
-  section4.style.height = "7000px";
+  section4.style.height = "1350px";
   seemorebtn.style.display = "none";
+  cover.style.display = "none";
 });
