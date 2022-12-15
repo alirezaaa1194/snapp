@@ -301,10 +301,13 @@ transition: opacity .3s ease !important;
     width: 100% !important;
   }
   .section4 .row .col-4 a {
-    padding: 8px 5px 0px 5px !important;
+    padding: 8px 5px 8px 5px !important;
     flex-direction: column !important;
     justify-content: center;
     border-radius: 25px !important;
+  }
+  .section4 .row .col-4 a div h6{
+    padding-bottom: 5px !important;
   }
   .section4 .row .col-4 a p {
     display: none !important;
@@ -354,7 +357,7 @@ transition: opacity .3s ease !important;
     transform: scale(1.4) !important;
   }
   .carousel-inner{
-    transform: scale(130%) !important;
+    transform: scale(123%) !important;
   }
   .carousel-indicators{
     bottom: -30px !important;
