@@ -198,14 +198,13 @@
     <main>
       <div class="container-fluid">
         <div class="row flex-row-reverse">
-          <div class="col-12 col-lg-6 px-0">
-            <img
+          <div class="col-12 col-lg-6 px-0 manimage">
+            <!-- <img
               src="https://web-cdn.snapp.ir/snapp-website/images/homepage/intro_desktop.jpg"
-              class="img-fluid"
+              class="img-fluid manimage"
               alt=""
-              style="min-height: 100% !important"
               draggable="false"
-            />
+            /> -->
           </div>
           <div
             class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-start py-4 paragraph_box"
@@ -218,7 +217,7 @@
               سفر، مشاوره‌ی پزشکی و روانشناسی، رزرو هتل و... را میتوانید با
               سوپراپلیکیشن اسنپ انجام دهید.
             </p>
-            <a href="" class="gotoapp mt-3 p-3 d-block d-lg-none"
+            <a href="" class="gotoapp gotoapp2 mt-3 p-3 py-2 d-block d-lg-none"
               >دانلود اپلیکیشن اسنپ</a
             >
             <div
@@ -279,7 +278,7 @@
         </a>
       </div>
       <div class="container-fluid section4 position-relative" id="section4">
-        <div class="container">
+        <div class="container " id="container4">
           <div class="row justify-content-center">
             <div class="col-12 mt-4 mt-xl-3 mb-4">
               <h1 class="section4_header">یک اپلیکیشن، برای تمام نیازها</h1>
@@ -688,34 +687,54 @@
         <div class="cover" id="cover"></div>
         <button class="seemorebtn mx-auto" id="seemorebtn">مشاهده همه</button>
       </div>
-      <div class="container section5">
-
-
-      <div id="carouselExampleIndicators" dir="ltr" class="carousel slide position-relative" data-bs-ride="true" data-bs-ride="carousel" data-bs-interval="true" data-bs-touch="true">
-        <div class="carousel-indicators" dir="ltr">
-          <div class="aaa">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <div class="container section5" id="section5">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators" dir="ltr">
+            <div class="aaa">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
           </div>
-        </div>
-        <div class="carousel-inner" dir="ltr">
-          <div class="carousel-item active"  data-bs-interval="5000">
-            <img src="https://web-cdn.snapp.ir/snapp-website/images/homepage/slider/Food.jpg" class="d-block w-100" alt="..." draggable="false">
-          </div>
-          <div class="carousel-item"  data-bs-interval="5000">
-            <img src="	https://web-cdn.snapp.ir/snapp-website/images/homepage/slider/Market.jpg" class="d-block w-100" alt="..." draggable="false">
-          </div>
-          <div class="carousel-item"  data-bs-interval="5000">
-            <img src="	https://web-cdn.snapp.ir/snapp-website/images/homepage/slider/Driver.jpg" class="d-block w-100" alt="..." draggable="false">
-          </div>
-          <div class="carousel-item"  data-bs-interval="5000">
-            <img src="	https://web-cdn.snapp.ir/snapp-website/images/homepage/slider/Driver.jpg" class="d-block w-100" alt="..." draggable="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <a href=""><img src="https://web-cdn.snapp.ir/snapp-website/images/homepage/slider/Food.jpg" class="d-block w-100" alt="Food" draggable="false"></a>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <a href=""><img src="https://web-cdn.snapp.ir/snapp-website/images/homepage/slider/Market.jpg" class="d-block w-100" alt="Market" draggable="false"></a>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <a href=""><img src="https://web-cdn.snapp.ir/snapp-website/images/homepage/slider/Driver.jpg" class="d-block w-100" alt="Driver" draggable="false"></a>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <a href=""><img src="https://web-cdn.snapp.ir/snapp-website/images/homepage/slider/Club.jpg" class="d-block w-100" alt="Club" draggable="false"></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </main>
     <footer></footer>
     <script src="./app.js"></script>

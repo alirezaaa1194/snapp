@@ -92,14 +92,13 @@ main {
   color: #fff;
   font-size: 14px;
 }
-/* .phone_textbox input:-webkit-autofill,
-.phone_textbox input:-webkit-autofill:hover, 
-.phone_textbox input:-webkit-autofill:focus, 
-.phone_textbox input:-webkit-autofill:active{
-    -webkit-background-clip: text;
-    
-
-} */
+.manimage {
+  width: 100%;
+  background-image: url("https://web-cdn.snapp.ir/snapp-website/images/homepage/intro_desktop.jpg");
+  background-position: right center;
+  background-size: cover;
+  min-height: 40vh;
+}
 .phone_textbox input::placeholder {
   color: rgba(255, 255, 255, 75%) !important;
 }
@@ -130,6 +129,14 @@ main {
 .gotoapp:hover {
   background-color: rgba(255, 255, 255, 10%) !important;
 }
+.gotoapp2 {
+  background-color: #fff !important;
+  color: black !important;
+  font-size: 12px !important;
+}
+.gotoapp2:hover {
+  background-color: #f1f1f1 !important;
+}
 .paragraph_box {
   background-color: #21aa58 !important;
   color: #fff;
@@ -154,7 +161,7 @@ main {
   background-color: #f2f5f8 !important;
   padding: 35px 0px 45px 0px;
 }
-.section4 .container{
+.section4 .container {
   width: 80% !important;
 }
 .section4 .row .col-4 a {
@@ -178,39 +185,44 @@ main {
 .seemorebtn {
   display: none;
 }
-.carousel-inner{
+.carousel-inner {
   border-radius: 9px !important;
 }
-.section5{
-  padding:60px !important;
+.section5 {
+  padding: 60px !important;
 }
-.carousel-indicators{
+.carousel-indicators {
   height: 20px !important;
   position: absolute !important;
   bottom: -10px !important;
   z-index: 1 !important;
 }
-.carousel-indicators .aaa{
+.carousel-indicators .aaa {
   display: inline-block;
-  padding:0px 4px !important;
+  padding: 0px 4px !important;
   height: 20px !important;
-  background-color: rgba(0,0,0,18%) !important;
+  background-color: rgba(0, 0, 0, 18%) !important;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.carousel-indicators button{
-width: 9px !important;
-height: 9px !important;
-border-radius: 50% !important;
-margin:0 3px !important;
-transition: opacity .3s ease !important;
+.carousel-indicators button {
+  width: 9px !important;
+  height: 9px !important;
+  border-radius: 50% !important;
+  margin: 0 3px !important;
+  transition: opacity 0.3s ease !important;
 }
-.carousel-item{
-  transition: transform .3s ease-in-out !important;
+.carousel-item {
+  transition: transform 0.3s ease-in-out !important;
 }
+
+/* mobile */
 @media screen and (max-width: 700px) {
+  .manimage {
+    background-position: center;
+  }
   .boldpheader_section2 {
     font-size: 28px !important;
     word-spacing: 0px !important;
@@ -238,7 +250,7 @@ transition: opacity .3s ease !important;
     text-align: center !important;
     margin: 8px 0px 8px 0px !important;
   }
-  .section4 .row .col-4 a img{
+  .section4 .row .col-4 a img {
     margin: 0px !important;
   }
   .section4 {
@@ -248,7 +260,7 @@ transition: opacity .3s ease !important;
     display: flex;
     justify-content: center;
   }
-  .section4 .container{
+  .section4 .container {
     width: 100% !important;
   }
   .cover {
@@ -263,29 +275,30 @@ transition: opacity .3s ease !important;
       rgba(255, 255, 255, 45%),
       rgba(255, 255, 255, 10%)
     );
-
-/* background: linear-gradient(to top, rgba(255,255, 255, 94%), rgba(255,255,255 ,65%), rgba(255,255,255, 17%) ,rgba(0,0,0,0%) ); */
   }
   .seemorebtn {
+    width: 100px;
+    height: 46px;
     display: block;
     position: absolute;
     z-index: 2 !important;
     bottom: 20px !important;
-    padding: 8px;
+    padding: 0px 12px;
     font-weight: bold;
+    font-size: 14px;
     border-radius: 6px;
     background-color: #fff;
-    border: 2px solid rgb(0, 209, 112);
+    border: 1px solid rgb(0, 209, 112);
     color: rgb(0, 209, 112);
-    transform: scale(1.3);
+    transform: scale(1.15);
   }
-  .section5{
+  .section5 {
     padding: 30px !important;
   }
-  .carousel-inner{
+  .carousel-inner {
     transform: scaleY(135%) !important;
   }
-  .carousel-indicators{
+  .carousel-indicators {
     bottom: -25px !important;
   }
 }
@@ -297,17 +310,27 @@ transition: opacity .3s ease !important;
   .paragraph_box a {
     font-size: 17px !important;
   }
-  .section4 .container{
+  .manimage {
+    min-height: 90vh;
+    background-position: center;
+  }
+  .section4 .container {
     width: 100% !important;
   }
   .section4 .row .col-4 a {
-    padding: 8px 5px 8px 5px !important;
+    width: 90%;
+    height: 100px;
+    padding: 8px !important;
     flex-direction: column !important;
     justify-content: center;
     border-radius: 25px !important;
+    font-size: 14px !important;
   }
-  .section4 .row .col-4 a div h6{
-    padding-bottom: 5px !important;
+  .section4 .row .col-4 a img {
+    transform: scale(0.85);
+  }
+  .section4 .row .col-4 a div h6 {
+    padding-bottom: 8px !important;
   }
   .section4 .row .col-4 a p {
     display: none !important;
@@ -320,13 +343,13 @@ transition: opacity .3s ease !important;
     margin: 8px 0px 8px 0px;
   }
   .section4 {
-    transition: 1s;
-    height: 120vh;
+    transition: 1s !important;
+    height: 210vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
   }
-  .section4 .row .col-4 a img{
+  .section4 .row .col-4 a img {
     margin: 0px !important;
   }
   .cover {
@@ -345,21 +368,48 @@ transition: opacity .3s ease !important;
     );
   }
   .seemorebtn {
+    width: 100px;
+    height: 46px;
     display: block;
     position: absolute;
-    bottom: 30px !important;
-    padding: 8px;
     font-weight: bold;
+    bottom: 30px !important;
+    padding: 0px 12px !important;
+    font-size: 14px !important;
     border-radius: 6px;
     background-color: #fff;
-    border: 2px solid rgb(0, 209, 112);
+    border: 1px solid rgb(0, 209, 112);
     color: rgb(0, 209, 112);
-    transform: scale(1.4) !important;
+    transform: scale(1.15) !important;
   }
-  .carousel-inner{
+  .carousel-inner {
     transform: scale(123%) !important;
   }
-  .carousel-indicators{
+  .carousel-indicators {
     bottom: -30px !important;
+  }
+}
+
+/* ipad */
+
+@media screen and (min-width: 750px) and (max-width: 900px) {
+  .paragraph_box {
+    padding: 30px !important;
+  }
+  .section4 .container {
+    margin: 0px 15px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .section4 .row .col-4 a {
+    padding: 10px !important;
+  }
+  .section4 .row .col-4 a img {
+    padding: 4px !important;
+    transform: scale(0.9) !important;
+  }
+  .section5 {
+    padding: 20px !important;
   }
 }

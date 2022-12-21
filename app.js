@@ -1,6 +1,8 @@
 let acbutton = document.getElementById("acbutton");
 let icon = document.getElementById("icon");
 let cover = document.getElementById("cover");
+let container4 = document.getElementById("container4");
+let section5 = document.getElementById("section5");
 let body = document.body;
 let count = true;
 let phone = document.getElementById("phone");
@@ -37,13 +39,18 @@ acbutton.addEventListener("click", function a() {
     count = true;
   }
 });
-  seemorebtn.addEventListener("click", function bgn() {
-    if(window.matchMedia("(orientation:landscape)").matches){
-      section4.style.height = "1200px";    
-    }
-    else{
-      section4.style.height = "1300px";
-    }
-    seemorebtn.style.display = "none";
-    cover.style.display = "none";
-  });
+seemorebtn.addEventListener("click", function bgn() {
+  if (window.matchMedia("(orientation:landscape)").matches) {
+    section4.style.height = "1100px";
+  } else {
+    section4.style.height = "1160px";
+  }
+  seemorebtn.style.display = "none";
+  cover.style.display = "none";
+});
+if(screen.availWidth>750 && screen.availWidth<900){
+  container4.classList.remove('container');
+  container4.classList.add('container-fluid');
+  section5.classList.remove('container');
+  section5.classList.add('container-fluid');
+}
