@@ -318,19 +318,19 @@ main {
     width: 100% !important;
   }
   .section4 .row .col-4 a {
-    width: 90%;
+    width: 95%;
     height: 100px;
     padding: 8px !important;
     flex-direction: column !important;
     justify-content: center;
     border-radius: 25px !important;
-    font-size: 14px !important;
   }
   .section4 .row .col-4 a img {
     transform: scale(0.85);
   }
   .section4 .row .col-4 a div h6 {
     padding-bottom: 8px !important;
+    font-size: 14px !important;
   }
   .section4 .row .col-4 a p {
     display: none !important;

@@ -43,7 +43,7 @@ seemorebtn.addEventListener("click", function bgn() {
   if (window.matchMedia("(orientation:landscape)").matches) {
     section4.style.height = "1100px";
   } else {
-    section4.style.height = "1160px";
+    section4.style.height = "1330px";
   }
   seemorebtn.style.display = "none";
   cover.style.display = "none";
