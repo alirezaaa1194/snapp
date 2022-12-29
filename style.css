@@ -17,7 +17,7 @@ header {
   z-index: 10;
 }
 body {
-  height: 300vh;
+  height: 500vh;
   max-width: 1700px !important;
 }
 .span_in_ofcanvas {
@@ -97,7 +97,7 @@ main {
   background-image: url("https://web-cdn.snapp.ir/snapp-website/images/homepage/intro_desktop.jpg");
   background-position: right center;
   background-size: cover;
-  min-height: 40vh;
+  min-height: 40vh !important;
 }
 .phone_textbox input::placeholder {
   color: rgba(255, 255, 255, 75%) !important;
@@ -215,8 +215,63 @@ main {
   transition: opacity 0.3s ease !important;
 }
 .carousel-item {
-  transition: transform 0.3s ease-in-out !important;
+  transition: transform 0.15s ease-in-out !important;
 }
+.answer_allbox{
+  background-image: url('	https://web-cdn.snapp.ir/snapp-website/images/homepage/super-app.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+}
+.answer_allbox_paragraph{
+padding: 35px 35px 0px 80px !important;
+}
+.answer_allbox_paragraph p{
+  margin-top: 35px !important;
+  color: rgba(0, 0, 0, 80%);
+  font-size: 15px !important;
+}
+.section6{
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: space-between;
+}
+.cardbox{
+  width: 240px !important;
+}
+.section6 .card{
+  border-style: none !important;
+  background:none !important;
+}
+.section6 .card h5{
+  font-weight:bold;
+}
+.section6 .card p{
+  font-size: 12px !important;
+  color: rgba(0, 0, 0, 80%);
+}
+.image_cardbox{
+  width: 100%;
+  background-color: #f2f5f8;
+  border-radius: 18px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section6 img{
+width: auto;
+height: auto;
+padding: 10px;
+width: 210px;
+height: 190px;
+/* align-self: center; */
+}
+.cardsection{
+  bottom: 100px !important;
+}
+
+
 
 /* mobile */
 @media screen and (max-width: 700px) {
@@ -236,9 +291,10 @@ main {
   }
   .section4 .row .col-4 a {
     flex-direction: column !important;
-    padding: 8px 5px 0px 5px !important;
+    padding: 8px 7px 0px 7px !important;
     width: 100% !important;
     border-radius: 25px !important;
+    margin: 0px !important;
   }
   .section4 .row .col-4 a div {
     margin: 5px 0px;
@@ -301,9 +357,37 @@ main {
   .carousel-indicators {
     bottom: -25px !important;
   }
+  .manimage {
+    height: 70vh !important;
+  }
+  .answer_allbox{
+    min-height: 40vh;
+  }
+  .answer_allbox_paragraph{
+    padding: 15px !important;
+  }
+  .answer_allbox_paragraph h3{
+    font-size: 22px !important;
+    margin-top: 15px;
+  }
+  .answer_allbox_paragraph p{
+    margin-top: 20px !important;
+    font-size: 17px !important;
+    text-align: justify;
+  }
+  .cardsection{
+    flex-direction: column;
+    align-items: center !important;
+    bottom: 0px !important;
+    padding: 0px 10px !important;
+  }
+  .cardbox{
+    width: 100% !important;
+    margin: 0px !important;
+  }
 }
 
-@media screen and (max-width: 800px) and (orientation: landscape) {
+@media screen and (max-width: 950px) and (orientation: landscape) {
   .paragraph_box {
     padding: 20px !important;
   }
@@ -383,16 +467,44 @@ main {
     transform: scale(1.15) !important;
   }
   .carousel-inner {
-    transform: scale(123%) !important;
+    transform: scale(100%) !important;
   }
   .carousel-indicators {
-    bottom: -30px !important;
+    bottom: -5px !important;
+  }
+  .manimage {
+    height: 90vh !important;
+  }
+  .answer_allbox{
+    min-height: 40vh;
+    background-position: center !important;
+  }
+  .answer_allbox_paragraph{
+    padding: 15px !important;
+  }
+  .answer_allbox_paragraph h3{
+    font-size: 22px !important;
+    margin-top: 15px;
+  }
+  .answer_allbox_paragraph p{
+    margin-top: 20px !important;
+    font-size: 17px !important;
+    text-align: justify;
+  }
+  .cardsection{
+    flex-direction: column;
+    align-items: center !important;
+    bottom: 0px !important;
+    padding: 0px 10px !important;
+  }
+  .cardbox{
+    width: 100% !important;
+    margin: 0px !important;
   }
 }
 
 /* ipad */
-
-@media screen and (min-width: 750px) and (max-width: 900px) {
+@media screen and (min-width: 750px) and (max-width: 1100px) {
   .paragraph_box {
     padding: 30px !important;
   }
@@ -412,4 +524,13 @@ main {
   .section5 {
     padding: 20px !important;
   }
+  .cardsection{
+    bottom: 0px !important;
+  }
 }
+/* 
+@media screen and (min-width: 750px) and (max-width: 900px) and (orientation:landscape){
+  body{
+    display: none;
+  }
+} */
