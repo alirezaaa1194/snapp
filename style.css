@@ -111,6 +111,11 @@ main {
   color: black !important;
   cursor: pointer;
 }
+#fillcircle{
+  color: rgb(235, 235, 235);
+  font-size: 10px !important;
+  margin: 2px;
+}
 .gotoapp {
   color: #00d16f;
   text-decoration: none;
@@ -352,12 +357,13 @@ height: 190px;
   }
   .section5 {
     padding: 30px !important;
+    padding-top: 80px !important;
   }
   .carousel-inner {
     transform: scaleY(135%) !important;
   }
   .carousel-indicators {
-    bottom: -25px !important;
+    bottom: -17px !important;
   }
   .answer_allbox{
     min-height: 40vh;
@@ -426,7 +432,7 @@ height: 190px;
     margin: 8px 0px 8px 0px;
   }
   .section4 {
-    height: 100vh;
+    height: 160vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -501,6 +507,10 @@ height: 190px;
   .cardbox{
     width: 100% !important;
     margin: 0px !important;
+  }
+  .section5 {
+    padding: 30px !important;
+    padding-top: 40px !important;
   }
 }
 
