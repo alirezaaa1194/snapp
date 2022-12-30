@@ -48,6 +48,7 @@ seemorebtn.addEventListener("click", function bgn() {
   } else {
     section4.style.height = "auto";
     section4.style.transition = "1s";
+    container4.classList.remove('position-absolute')
   }
   seemorebtn.style.display = "none";
   cover.style.display = "none";
