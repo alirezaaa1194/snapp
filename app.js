@@ -41,11 +41,13 @@ acbutton.addEventListener("click", function a() {
 });
 seemorebtn.addEventListener("click", function bgn() {
   if (window.matchMedia("(orientation:landscape)").matches) {
-    section4.style.height = "1230px";
+    section4.style.height = "auto";
     section5.classList.remove('container')
     section5.classList.add('container-fluid')
+    container4.classList.remove('position-absolute')
   } else {
-    section4.style.height = "1330px";
+    section4.style.height = "auto";
+    section4.style.transition = "1s";
   }
   seemorebtn.style.display = "none";
   cover.style.display = "none";
@@ -55,6 +57,9 @@ if(screen.availWidth>750 && screen.availWidth<1100){
   container4.classList.add('container-fluid');
   section5.classList.remove('container');
   section5.classList.add('container-fluid');
+}
+if(screen.availWidth>1100){
+  container4.classList.remove('position-absolute')
 }
 if (window.matchMedia("(orientation:landscape)").matches) {
   section5.classList.remove('container')
