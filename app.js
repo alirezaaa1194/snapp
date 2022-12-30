@@ -47,17 +47,18 @@ seemorebtn.addEventListener("click", function bgn() {
     container4.classList.remove('position-absolute')
   } else {
     section4.style.height = "auto";
-    section4.style.transition = "1s";
     container4.classList.remove('position-absolute')
   }
   seemorebtn.style.display = "none";
   cover.style.display = "none";
+  section5.style.paddingTop="30px"
 });
 if(screen.availWidth>750 && screen.availWidth<1100){
   container4.classList.remove('container');
   container4.classList.add('container-fluid');
   section5.classList.remove('container');
   section5.classList.add('container-fluid');
+  container4.classList.remove('position-absolute')
 }
 if(screen.availWidth>1100){
   container4.classList.remove('position-absolute')

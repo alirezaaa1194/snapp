@@ -170,6 +170,9 @@ main {
 .section4 .container {
   width: 80% !important;
 }
+.section4 .row .col-4{
+  margin: 0px !important;
+}
 .section4 .row .col-4 a {
   text-decoration: none !important;
   background-color: #fff;
@@ -296,6 +299,9 @@ height: 190px;
   .paragraph_box {
     padding: 20px !important;
   }
+  .section4 .row .col-4{
+    margin-top: 22px !important;
+  }
   .section4 .row .col-4 a {
     flex-direction: column !important;
     padding: 8px 7px 0px 7px !important;
@@ -318,10 +324,12 @@ height: 190px;
   }
   .section4 {
     transition: 1s;
-    height: 70vh;
+    height: 85vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
+    padding-right:0!important;
+    padding-left:0 !important;
   }
   .section4 .container {
     width: 100% !important;
@@ -357,7 +365,6 @@ height: 190px;
   }
   .section5 {
     padding: 30px !important;
-    padding-top: 80px !important;
   }
   .carousel-inner {
     transform: scaleY(135%) !important;
@@ -406,6 +413,9 @@ height: 190px;
   .section4 .container {
     width: 100% !important;
   }
+  .section4 .row .col-4{
+    margin-top: 22px !important;
+  }
   .section4 .row .col-4 a {
     width: 95%;
     height: 100px;
@@ -413,6 +423,7 @@ height: 190px;
     flex-direction: column !important;
     justify-content: center;
     border-radius: 25px !important;
+    margin: 5px !important;
   }
   .section4 .row .col-4 a img {
     transform: scale(0.85);
@@ -525,6 +536,9 @@ height: 190px;
     justify-content: center !important;
     align-items: center !important;
   }
+  .section4 .row .col-4{
+    margin-top: 22px !important;
+  }
   .section4 .row .col-4 a {
     padding: 10px !important;
     margin: 0px !important;
@@ -544,10 +558,21 @@ height: 190px;
   .cardsection{
     bottom: 0px !important;
   }
-}
-/* 
-@media screen and (min-width: 750px) and (max-width: 900px) and (orientation:landscape){
-  body{
-    display: none;
+  .answer_allbox{
+    min-height: 30vh;
+    background-position: center !important;
   }
-} */
+  .cardsection{
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width:750px) and (max-width: 1200px) and (orientation:landscape){
+  .cardsection{
+    margin-top: 130px;
+  }
+  .answer_allbox{
+    min-height: 40vh;
+    background-position: center !important;
+  }
+}
