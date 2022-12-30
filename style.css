@@ -363,7 +363,7 @@ height: 190px;
     transform: scaleY(135%) !important;
   }
   .carousel-indicators {
-    bottom: -17px !important;
+    bottom: -25px !important;
   }
   .answer_allbox{
     min-height: 40vh;
