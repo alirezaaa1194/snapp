@@ -10,6 +10,7 @@ let fillcircle = document.getElementById("fillcircle");
 let xcircle = document.getElementById("xcircle");
 let seemorebtn = document.getElementById("seemorebtn");
 let section4 = document.getElementById("section4");
+let section7=document.querySelector('.section7_con');
 function checkinputvalue1() {
   if (phone.value.length > 0) {
     fillcircle.style.display = "none";
@@ -66,4 +67,6 @@ if(screen.availWidth>1100){
 if (window.matchMedia("(orientation:landscape)").matches) {
   section5.classList.remove('container')
   section5.classList.add('container-fluid')
+  section7.classList.remove('container')
+  section7.classList.add('container-fluid')
 }
