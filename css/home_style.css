@@ -1,24 +1,81 @@
 @font-face {
   font-family: roboto;
-  src: url("./font/IRANSansWeb\(FaNum\)_Light.ttf");
+  src: url("../font/IRANSansWeb\(FaNum\)_Light.ttf");
 }
 * {
   margin: 0;
   font-family: roboto;
   user-select: none;
 }
-.nav-item .nav-link {
-  font-size: 95%;
-  color: #3f3f3f;
+body {
+  max-width: 1700px !important;
 }
 header {
   top: 0 !important;
   right: 0 !important;
   z-index: 10;
 }
-body {
-  height: 500vh;
-  max-width: 1700px !important;
+.offcanvas-header {
+  height: 70px;
+  padding-bottom: 50px !important;
+}
+.offcanvas-body ul {
+  padding-right: 10px !important;
+}
+.all-btn {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  padding-right: 20px;
+  z-index: 100000 !important;
+  width: 300px !important;
+  height: 20px;
+  background: none;
+}
+.menu-btn-1 {
+  height: 32px;
+  width: 40px;
+  cursor: pointer;
+  position: relative;
+}
+.menu-btn-1 span {
+  transform: scale(0.7);
+}
+.menu-btn-1 span,
+.menu-btn-1 span::before,
+.menu-btn-1 span::after {
+  background: rgb(0, 0, 0);
+  border-radius: 1px;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  right: 0px;
+  margin-top: 13px;
+  transition: 0.3s ease-in-out;
+}
+.menu-btn-1 span::before {
+  margin-top: -12px;
+}
+
+.menu-btn-1 span::after {
+  margin-top: 12px;
+}
+.menu-btn-1.active span {
+  background: transparent;
+}
+.menu-btn-1.active span::before {
+  margin-top: 0;
+  transform: rotate(45deg);
+}
+.menu-btn-1.active span::after {
+  margin-top: 0;
+  transform: rotate(-45deg);
+}
+.nav-item .nav-link {
+  font-size: 98%;
+  margin-top: 17px !important;
+  color: #3f3f3f;
 }
 .span_in_ofcanvas {
   text-decoration: none;
@@ -111,7 +168,7 @@ main {
   color: black !important;
   cursor: pointer;
 }
-#fillcircle{
+#fillcircle {
   color: rgb(235, 235, 235);
   font-size: 10px !important;
   margin: 2px;
@@ -170,7 +227,7 @@ main {
 .section4 .container {
   width: 80% !important;
 }
-.section4 .row .col-4{
+.section4 .row .col-4 {
   margin: 0px !important;
 }
 .section4 .row .col-4 a {
@@ -226,41 +283,41 @@ main {
 .carousel-item {
   transition: transform 0.15s ease-in-out !important;
 }
-.answer_allbox{
-  background-image: url('	https://web-cdn.snapp.ir/snapp-website/images/homepage/super-app.jpg');
+.answer_allbox {
+  background-image: url("	https://web-cdn.snapp.ir/snapp-website/images/homepage/super-app.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 70vh;
 }
-.answer_allbox_paragraph{
-padding: 35px 35px 0px 80px !important;
+.answer_allbox_paragraph {
+  padding: 35px 35px 0px 80px !important;
 }
-.answer_allbox_paragraph p{
+.answer_allbox_paragraph p {
   margin-top: 35px !important;
   color: rgba(0, 0, 0, 80%);
   font-size: 15px !important;
 }
-.section6{
+.section6 {
   display: flex;
   flex-direction: column;
   align-items: right;
   justify-content: space-between;
 }
-.cardbox{
+.cardbox {
   width: 240px !important;
 }
-.section6 .card{
+.section6 .card {
   border-style: none !important;
-  background:none !important;
+  background: none !important;
 }
-.section6 .card h5{
-  font-weight:bold;
+.section6 .card h5 {
+  font-weight: bold;
 }
-.section6 .card p{
-  font-size: 12px !important;
+.section6 .card p {
+  font-size: 13px !important;
   color: rgba(0, 0, 0, 80%);
 }
-.image_cardbox{
+.image_cardbox {
   width: 100%;
   background-color: #f2f5f8;
   border-radius: 18px !important;
@@ -268,40 +325,40 @@ padding: 35px 35px 0px 80px !important;
   align-items: center;
   justify-content: center;
 }
-.section6 img{
-width: auto;
-height: auto;
-padding: 10px;
-width: 210px;
-height: 190px;
-/* align-self: center; */
+.section6 img {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  width: 210px;
+  height: 190px;
+  /* align-self: center; */
 }
-.cardsection{
+.cardsection {
   bottom: 100px !important;
 }
-.section7{
+.section7 {
   background-color: #f2f5f8;
   padding: 45px 110px !important;
   text-align: center;
 }
-.headerof_section7{
+.headerof_section7 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.headerof_section7 h2{
+.headerof_section7 h2 {
   font-size: 36px;
   font-weight: bold;
 }
-.headerof_section7 p{
-  color: rgb(64,64,64);
+.headerof_section7 p {
+  color: rgb(64, 64, 64);
   font-size: 20px !important;
 }
-.headerof_section7 a{
+.headerof_section7 a {
   color: #fff;
   text-decoration: none;
-  background-color: rgb(0,209,112);
+  background-color: rgb(0, 209, 112);
   border-radius: 6px;
   padding: 10px 25px;
   font-size: 17px;
@@ -309,34 +366,56 @@ height: 190px;
   margin-top: 15px;
   font-weight: bold;
 }
-.headerof_section7 a:hover{
+.headerof_section7 a:hover {
   color: #fff;
   text-decoration: none;
-  background-color: rgba(0,209,112,90%);
+  background-color: rgba(0, 209, 112, 90%);
 }
-.headerof_section7 a:active{
+.headerof_section7 a:active {
   background-color: rgb(5, 179, 98);
 }
-video{
+video {
   border-radius: 9px !important;
   margin-top: 50px;
 }
-.section7_cardbox .card{
-display: flex;
-flex-direction: row !important;
-align-items: center;
-justify-content: space-evenly;
-padding: 30px 20px;
-border-style: none !important;
-border-radius: 18px !important;
-height: 100% !important;
+.section7_cardbox .card {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px 20px;
+  border-style: none !important;
+  border-radius: 18px !important;
+  height: 100% !important;
 }
-.section7_cardbox .card img{
-  transform: scale(.8);
+.section7_cardbox .card img {
+  transform: scale(0.8);
 }
-.section7_cardbox .card .third_p{
+.section7_cardbox .card .third_p {
   font-size: 14px !important;
-  color: rgb(64,64,64);
+  color: rgb(64, 64, 64);
+}
+footer{
+  padding: 50px 90px !important;
+  background: #fff;
+}
+footer .container .row .col-12:nth-child(1) a , footer .container .row .col-12:nth-child(1) a:hover{
+  color: rgb(64, 64, 64) !important;
+  text-decoration: none;
+  font-size: 100%;
+  margin:10px 15px;
+}
+footer .container .row .col-12:nth-child(2) a , footer .container .row .col-12:nth-child(2) a:hover{
+  color: rgb(64, 64, 64) !important;
+  text-decoration: none;
+  font-size: 100%;
+  margin:10px;
+}
+footer .container .row .col-12:nth-child(3) a , footer .container .row .col-12:nth-child(3) a:hover{
+  color: rgb(64, 64, 64) !important;
+  text-decoration: none;
+  font-size: 100%;
+  margin-top:20px !important;
 }
 /* mobile */
 @media screen and (max-width: 700px) {
@@ -355,7 +434,7 @@ height: 100% !important;
   .paragraph_box {
     padding: 20px !important;
   }
-  .section4 .row .col-4{
+  .section4 .row .col-4 {
     margin-top: 22px !important;
   }
   .section4 .row .col-4 a {
@@ -384,8 +463,8 @@ height: 100% !important;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    padding-right:0!important;
-    padding-left:0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
   }
   .section4 .container {
     width: 100% !important;
@@ -428,47 +507,54 @@ height: 100% !important;
   .carousel-indicators {
     bottom: -25px !important;
   }
-  .answer_allbox{
+  .answer_allbox {
     min-height: 40vh;
   }
-  .answer_allbox_paragraph{
+  .answer_allbox_paragraph {
     padding: 15px !important;
   }
-  .answer_allbox_paragraph h3{
+  .answer_allbox_paragraph h3 {
     font-size: 22px !important;
     margin-top: 15px;
   }
-  .answer_allbox_paragraph p{
+  .answer_allbox_paragraph p {
     margin-top: 20px !important;
     font-size: 17px !important;
     text-align: justify;
   }
-  .cardsection{
+  .cardsection {
     flex-direction: column;
     align-items: center !important;
     bottom: 0px !important;
     padding: 0px 10px !important;
   }
-  .cardbox{
+  .cardbox {
     width: 100% !important;
     margin: 0px !important;
   }
-  .section7{
+  .section7 {
     background-color: #f2f5f8;
     padding: 45px 5px !important;
     text-align: center;
   }
-  video{
+  video {
     margin-top: 30px !important;
   }
 
-  .section7_cardbox .card{
+  .section7_cardbox .card {
     display: flex;
     flex-direction: column !important;
     align-items: center;
     justify-content: space-evenly;
     padding: 15px 20px;
-    }
+  }
+  .headerof_section7 h2 {
+    font-size: 28px !important;
+  }
+  footer{
+    padding: 50px 0px !important;
+    background-color: red;
+  }
 }
 
 @media screen and (max-width: 950px) and (orientation: landscape) {
@@ -485,7 +571,7 @@ height: 100% !important;
   .section4 .container {
     width: 100% !important;
   }
-  .section4 .row .col-4{
+  .section4 .row .col-4 {
     margin-top: 22px !important;
   }
   .section4 .row .col-4 a {
@@ -520,10 +606,16 @@ height: 100% !important;
     display: flex;
     justify-content: center;
   }
+  #container4 {
+    top: 0 !important;
+  }
+  #container4 h1 {
+    margin-top: 35px !important;
+  }
   .section4 .row .col-4 a img {
     margin: 0px !important;
   }
-  .section4 .container-fluid{
+  .section4 .container-fluid {
     top: 10% !important;
   }
   .cover {
@@ -565,29 +657,36 @@ height: 100% !important;
   .manimage {
     height: 90vh !important;
   }
-  .answer_allbox{
+  .answer_allbox {
     min-height: 40vh;
     background-position: center !important;
   }
-  .answer_allbox_paragraph{
+  .answer_allbox_paragraph {
     padding: 15px !important;
   }
-  .answer_allbox_paragraph h3{
+  .answer_allbox_paragraph h3 {
     font-size: 22px !important;
     margin-top: 15px;
   }
-  .answer_allbox_paragraph p{
+  .answer_allbox_paragraph p {
     margin-top: 20px !important;
     font-size: 17px !important;
     text-align: justify;
   }
-  .cardsection{
+  .section6 .card {
+    margin-top: 30px !important;
+  }
+  .section6 .card p {
+    font-size: 15px !important;
+  }
+  .cardsection {
     flex-direction: column;
     align-items: center !important;
     bottom: 0px !important;
     padding: 0px 10px !important;
+    margin-top: 10px !important;
   }
-  .cardbox{
+  .cardbox {
     width: 100% !important;
     margin: 0px !important;
   }
@@ -595,28 +694,31 @@ height: 100% !important;
     padding: 30px !important;
     padding-top: 40px !important;
   }
-  .section7{
+  .section7 {
     padding: 45px 5px !important;
     display: flex;
     justify-content: center;
     width: 100% !important;
     margin: 0px !important;
   }
-  .section7 .section7_con{
+  .section7 .section7_con {
     width: 100% !important;
     margin: 0px !important;
   }
-  video{
+  video {
     margin-top: 30px !important;
   }
-  .section7_cardbox .card{
+  .section7_cardbox .card {
     display: flex;
     flex-direction: column !important;
     align-items: center;
     justify-content: space-evenly;
     padding: 15px 20px;
     text-align: right;
-    }
+  }
+  .section7_cardbox .card img {
+    transform: scale(0.9) !important;
+  }
 }
 
 /* ipad */
@@ -630,7 +732,7 @@ height: 100% !important;
     justify-content: center !important;
     align-items: center !important;
   }
-  .section4 .row .col-4{
+  .section4 .row .col-4 {
     margin-top: 22px !important;
   }
   .section4 .row .col-4 a {
@@ -641,7 +743,7 @@ height: 100% !important;
     padding: 4px !important;
     transform: scale(0.9) !important;
   }
-  .section4{
+  .section4 {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
@@ -649,52 +751,52 @@ height: 100% !important;
   .section5 {
     padding: 20px !important;
   }
-  .cardsection{
+  .cardsection {
     bottom: 0px !important;
   }
-  .answer_allbox{
+  .answer_allbox {
     min-height: 30vh;
     background-position: center !important;
   }
-  .cardsection{
+  .cardsection {
     margin-top: 30px;
   }
-  .section7{
+  .section7 {
     padding: 45px 5px !important;
     display: flex;
     justify-content: center;
     width: 100% !important;
     margin: 0px !important;
   }
-  .section7 .section7_con{
+  .section7 .section7_con {
     width: 100% !important;
     margin: 0px !important;
   }
-  video{
+  video {
     margin-top: 30px !important;
   }
 }
 
-@media screen and (min-width:750px) and (max-width: 1200px) and (orientation:landscape){
-  .cardsection{
+@media screen and (min-width: 750px) and (max-width: 1200px) and (orientation: landscape) {
+  .cardsection {
     margin-top: 130px;
   }
-  .answer_allbox{
+  .answer_allbox {
     min-height: 40vh;
     background-position: center !important;
   }
-  .section7{
+  .section7 {
     padding: 45px 5px !important;
     display: flex;
     justify-content: center;
     width: 100% !important;
     margin: 0px !important;
   }
-  .section7 .section7_con{
+  .section7 .section7_con {
     width: 100% !important;
     margin: 0px !important;
   }
-  video{
+  video {
     margin-top: 30px !important;
   }
 }

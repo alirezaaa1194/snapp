@@ -9,7 +9,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
     <meta http-equiv="Content-Language" content="fa" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/home_style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,7 +24,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
-    <link rel="shortcut icon" href="https://passenger-pwa-cdn.snapp.ir/logos/square-minimal-192.png">
+    <link
+      rel="shortcut icon"
+      href="https://passenger-pwa-cdn.snapp.ir/logos/square-minimal-192.png"
+    />
     <title>سوپر اپلیکیشن اسنپ | سامانه هوشمند حمل‌ونقل | تاکسی اینترنتی</title>
   </head>
   <body dir="rtl">
@@ -46,10 +49,15 @@
             data-bs-target="#offcanvasNavbar2"
             aria-controls="offcanvasNavbar2"
           >
-            <img
+            <!-- <img
               src="https://web-cdn.snapp.ir/snapp-website/icons/menu_black_24dp.svg"
               alt=""
-            />
+            /> -->
+            <div class="all-btn">
+              <div class="menu-btn-1" onclick="menuBtnFunction(this)">
+                <span></span>
+              </div>
+            </div>
           </button>
           <div
             class="offcanvas offcanvas-end text-bg-white"
@@ -57,14 +65,7 @@
             id="offcanvasNavbar2"
             aria-labelledby="offcanvasNavbar2Label"
           >
-            <div class="offcanvas-header">
-              <button
-                type="button"
-                class="btn-close text-dark border-0 shadow-none"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
+            <div class="offcanvas-header border-bottom"></div>
             <div class="offcanvas-body p-0 m-0 px-2">
               <ul class="navbar-nav justify-content-start flex-grow-1 p-0 ms-3">
                 <li class="nav-item mx-2">
@@ -199,14 +200,7 @@
     <main>
       <div class="container-fluid">
         <div class="row flex-row-reverse">
-          <div class="col-12 col-lg-6 px-0 manimage">
-            <!-- <img
-              src="https://web-cdn.snapp.ir/snapp-website/images/homepage/intro_desktop.jpg"
-              class="img-fluid manimage"
-              alt=""
-              draggable="false"
-            /> -->
-          </div>
+          <div class="col-12 col-lg-6 px-0 manimage"></div>
           <div
             class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-start py-4 paragraph_box"
           >
@@ -769,35 +763,63 @@
           <div class="col-12 col-xl-6 answer_allbox"></div>
           <div class="col-12 col-xl-6 answer_allbox_paragraph">
             <h3 class="fw-bold">سوپر اپ اسنپ؛ پاسخی به تمام نیازها</h3>
-            <p>اسنپ، اولین تاکسی اینترنتی ایران، بعد از پنج سال فعالیت در حوزه‌ی تردد شهری، به یک سوپر‌اپ با خدمات متنوع تبدیل شد. سوپراپ اسنپ راه‌حلی جدید و ساده است که با استفاده از آن تنها با یک اپلیکیشن می‌توانید علاوه بر درخواست خودرو، موتور و وانت از خدمات متعددی از جمله سفارش غذا، پزشک و مشاور آنلاین، خرید از سوپرمارکت‌ها و فروشگاه‌ها، اسباب‌کشی، خرید بلیط (هواپیما، اتوبوس، قطار)، رزرو هتل، پرداخت قبض و خرید شارژ استفاده کنید.</p>
+            <p>
+              اسنپ، اولین تاکسی اینترنتی ایران، بعد از پنج سال فعالیت در حوزه‌ی
+              تردد شهری، به یک سوپر‌اپ با خدمات متنوع تبدیل شد. سوپراپ اسنپ
+              راه‌حلی جدید و ساده است که با استفاده از آن تنها با یک اپلیکیشن
+              می‌توانید علاوه بر درخواست خودرو، موتور و وانت از خدمات متعددی از
+              جمله سفارش غذا، پزشک و مشاور آنلاین، خرید از سوپرمارکت‌ها و
+              فروشگاه‌ها، اسباب‌کشی، خرید بلیط (هواپیما، اتوبوس، قطار)، رزرو
+              هتل، پرداخت قبض و خرید شارژ استفاده کنید.
+            </p>
           </div>
         </div>
-        <div class="w-100 cardsection d-flex justify-content-center position-relative pb-3">
+        <div
+          class="w-100 cardsection d-flex justify-content-center position-relative pb-3"
+        >
           <div class="cardbox mx-4">
             <div class="card">
               <div class="image_cardbox">
-                <img src="	https://web-cdn.snapp.ir/snapp-website/images/homepage/210x190-easy.png" alt="">
+                <img
+                  src="	https://web-cdn.snapp.ir/snapp-website/images/homepage/210x190-easy.png"
+                  alt=""
+                />
               </div>
               <h5 class="my-3">آسان</h5>
-              <p>برای استفاده از هر کدام از خدمات سوپر‌اپ اسنپ کافی است وارد اپلیکیشن اسنپ شوید و روی آیکون مورد نظر بزنید.</p>
+              <p>
+                برای استفاده از هر کدام از خدمات سوپر‌اپ اسنپ کافی است وارد
+                اپلیکیشن اسنپ شوید و روی آیکون مورد نظر بزنید.
+              </p>
             </div>
           </div>
           <div class="cardbox mx-4">
             <div class="card">
               <div class="image_cardbox">
-                <img src="https://web-cdn.snapp.ir/snapp-website/images/homepage/210x190-fast.png" alt="">
+                <img
+                  src="https://web-cdn.snapp.ir/snapp-website/images/homepage/210x190-fast.png"
+                  alt=""
+                />
               </div>
               <h5 class="my-3">سریع</h5>
-              <p>قرار گرفتن خدمات مختلف در یک پلت‌فرم به صرفه‌جویی در زمان کمک می‌کند. سوپراپ اسنپ پاسخی سریع به نیازهای رومزه‌ی شماست.</p>
+              <p>
+                قرار گرفتن خدمات مختلف در یک پلت‌فرم به صرفه‌جویی در زمان کمک
+                می‌کند. سوپراپ اسنپ پاسخی سریع به نیازهای رومزه‌ی شماست.
+              </p>
             </div>
           </div>
           <div class="cardbox mx-4">
             <div class="card">
               <div class="image_cardbox">
-                <img src="https://web-cdn.snapp.ir/snapp-website/images/homepage/210x190-eco.png" alt="">
+                <img
+                  src="https://web-cdn.snapp.ir/snapp-website/images/homepage/210x190-eco.png"
+                  alt=""
+                />
               </div>
-              <h5 class="my-3"> به صرفه</h5>
-              <p>سوپراپ اسنپ علاوه بر زمان در هزینه‌های شما نیز صرفه‌جویی می‌کند تا بهترین خدمات را با قیمتی منطقی دریافت کنید.</p>
+              <h5 class="my-3">به صرفه</h5>
+              <p>
+                سوپراپ اسنپ علاوه بر زمان در هزینه‌های شما نیز صرفه‌جویی می‌کند
+                تا بهترین خدمات را با قیمتی منطقی دریافت کنید.
+              </p>
             </div>
           </div>
         </div>
@@ -806,33 +828,74 @@
         <div class="container section7_con d-flex justify-content-center">
           <div class="row">
             <div class="col-12 headerof_section7">
-                <h2>در کمتر از ۱۰ دقیقه ثبت‌نام کنید و به ناوگان اسنپ بپیوندید.</h2>
-                <p class="mt-3">بدون نیاز به مراجعه‌ی حضوری، از طریق این صفحه، تمام مراحل ثبت‌نام را اینترنتی انجام دهید</p>
-                <a href="" class="">ثبت‌نام رانندگان</a>
+              <h2>
+                در کمتر از ۱۰ دقیقه ثبت‌نام کنید و به ناوگان اسنپ بپیوندید.
+              </h2>
+              <p class="mt-3">
+                بدون نیاز به مراجعه‌ی حضوری، از طریق این صفحه، تمام مراحل
+                ثبت‌نام را اینترنتی انجام دهید
+              </p>
+              <a href="" class="">ثبت‌نام رانندگان</a>
             </div>
             <div class="col-12 videobox">
-              <video controls="" class="radius-lg" src="https://web-cdn.snapp.ir/snapp-website/videos/homepage/jazb-ranande.mp4" poster="https://web-cdn.snapp.ir/snapp-website/images/homepage/jazb-ranande-cover.jpg" controlslist="nodownload" type="video/mp4" preload="none" style="width: 100%;"><caption>مزایای پیوستن به ناوگان اسنپ!</caption>Sorry, your browser doesnt support embedded videos.</video>
+              <video
+                controls=""
+                class="radius-lg"
+                src="https://web-cdn.snapp.ir/snapp-website/videos/homepage/jazb-ranande.mp4"
+                poster="https://web-cdn.snapp.ir/snapp-website/images/homepage/jazb-ranande-cover.jpg"
+                controlslist="nodownload"
+                type="video/mp4"
+                preload="none"
+                style="width: 100%"
+              >
+                <caption>
+                  مزایای پیوستن به ناوگان اسنپ!
+                </caption>
+                Sorry, your browser doesnt support embedded videos.
+              </video>
             </div>
             <div class="row justify-content-center m-0 p-0 g-4">
               <div class="col-12 col-xl-6 section7_cardbox">
                 <div class="card">
                   <div class="b1">
-                    <img alt="" src="https://web-cdn.snapp.ir/snapp-website/images/homepage/180x100-income.png" class="width-auto" loading="lazy" style="width: auto; height: 100px;">
+                    <img
+                      alt=""
+                      src="https://web-cdn.snapp.ir/snapp-website/images/homepage/180x100-income.png"
+                      class="width-auto"
+                      loading="lazy"
+                      style="width: auto; height: 100px"
+                    />
                   </div>
                   <div class="b2">
-                    <p class="fw-bold first_p"> درآمد تضمینی + پاداش‌های ماهانه و هفتگی</p>
-                     <p class="third_p">با فعالیت در ناوگان اسنپ، علاوه بر کسب درآمد مستمر و امکان تسویه در لحظه می‌توانید با شرکت در طرح‌های تشویقی مختلف، درآمد خود را افزایش دهید.</p>
+                    <p class="fw-bold first_p">
+                      درآمد تضمینی + پاداش‌های ماهانه و هفتگی
+                    </p>
+                    <p class="third_p">
+                      با فعالیت در ناوگان اسنپ، علاوه بر کسب درآمد مستمر و امکان
+                      تسویه در لحظه می‌توانید با شرکت در طرح‌های تشویقی مختلف،
+                      درآمد خود را افزایش دهید.
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-xl-6 section7_cardbox">
                 <div class="card">
                   <div class="b1">
-                    <img alt="" src="https://web-cdn.snapp.ir/snapp-website/images/homepage/180x100-hour.png" class="width-auto" loading="lazy" style="width: auto; height: 100px;">
+                    <img
+                      alt=""
+                      src="https://web-cdn.snapp.ir/snapp-website/images/homepage/180x100-hour.png"
+                      class="width-auto"
+                      loading="lazy"
+                      style="width: auto; height: 100px"
+                    />
                   </div>
                   <div class="b2">
                     <p class="fw-bold first_p">ساعت کاری دلخواه</p>
-                     <p class="third_p"> فعالیت در ناوگان اسنپ محدودیت زمانی ندارد و می‌توانید فعالیت خود را در هر ساعت از شبانه‌روز و متناسب با برنامه‌ی زندگی‌تان شخصی‌سازی کنید.</p>
+                    <p class="third_p">
+                      فعالیت در ناوگان اسنپ محدودیت زمانی ندارد و می‌توانید
+                      فعالیت خود را در هر ساعت از شبانه‌روز و متناسب با برنامه‌ی
+                      زندگی‌تان شخصی‌سازی کنید.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -840,22 +903,42 @@
               <div class="col-12 col-xl-6 section7_cardbox">
                 <div class="card">
                   <div class="b1">
-                    <img alt="" src="https://web-cdn.snapp.ir/snapp-website/images/homepage/180x100-benefits.png" class="width-auto" loading="lazy" style="width: auto; height: 100px;">
+                    <img
+                      alt=""
+                      src="https://web-cdn.snapp.ir/snapp-website/images/homepage/180x100-benefits.png"
+                      class="width-auto"
+                      loading="lazy"
+                      style="width: auto; height: 100px"
+                    />
                   </div>
                   <div class="b2">
                     <p class="fw-bold first_p">مزایا و خدمات باشگاه رانندگان</p>
-                     <p class="third_p">در باشگاه رانندگان اسنپ می‌توانید از تسهیلات و خدمات متنوعی از جمله خدمات خودرویی، خدمات درمانی و همچنین خدمات رفاهی و آموزشی بهره‌مند شوید.</p>
+                    <p class="third_p">
+                      در باشگاه رانندگان اسنپ می‌توانید از تسهیلات و خدمات
+                      متنوعی از جمله خدمات خودرویی، خدمات درمانی و همچنین خدمات
+                      رفاهی و آموزشی بهره‌مند شوید.
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-xl-6 section7_cardbox">
                 <div class="card">
                   <div class="b1">
-                    <img alt="" src="	https://web-cdn.snapp.ir/snapp-website/images/homepage/180x100-carfix.png" class="width-auto" loading="lazy" style="width: auto; height: 100px;">
+                    <img
+                      alt=""
+                      src="	https://web-cdn.snapp.ir/snapp-website/images/homepage/180x100-carfix.png"
+                      class="width-auto"
+                      loading="lazy"
+                      style="width: auto; height: 100px"
+                    />
                   </div>
                   <div class="b2">
                     <p class="fw-bold first_p">کار‌فیکس</p>
-                     <p class="third_p">باشگاه رانندگان اسنپ به‌تازگی سرویس جدید «اسنپ کارفیکس» را برای سهولت دسترسی کاربران راننده به انواع خدمات خودرویی راه‌اندازی کرده است.</p>
+                    <p class="third_p">
+                      باشگاه رانندگان اسنپ به‌تازگی سرویس جدید «اسنپ کارفیکس» را
+                      برای سهولت دسترسی کاربران راننده به انواع خدمات خودرویی
+                      راه‌اندازی کرده است.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -863,9 +946,46 @@
           </div>
         </div>
       </div>
-
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center justify-content-center flex-wrap">
+            <a href="">فرصت های شغلی</a>
+            <a href="">بلاگ</a>
+            <a href="">شرایط و قوانین</a>
+            <a href="">پنل سازمانی</a>
+            <a href="">سوالات متداول</a>
+            <a href="">باشگاه رانندگان</a>
+            <a href="">ثبت‌نام راننده اسنپ</a>
+            <a href="">درباره ما</a>
+            <a href="">تماس با ما</a>
+          </div>
+          <div class="col-12 d-flex align-items-center justify-content-center">
+            <a href="">
+                <i class="fas fa-twitter"></i>
+            </a>
+            <a href="">
+              <i class="fas fa-instagram"></i>
+          </a>
+          <a href="">
+            <i class="fas fa-youtube"></i>
+        </a>
+        <a href="">
+          <i class="fas fa-linkedin"></i>
+      </a>
+      <a href="">
+        <i class="fas fa-telegram"></i>
+    </a>
+          </div>
+          <div class="col-12 d-flex align-items-center justify-content-center flex-wrap">
+              <a href=""><img src="https://ecunion.ir/bundles/pouyasoft/home/img/namad.png" alt="ecunion" class="marginy-md" width="130" height="130" style="cursor: pointer;"></a>
+              <a href=""><img src="https://ecunion.ir/bundles/pouyasoft/home/img/namad.png" alt="ecunion" class="marginy-md" width="130" height="130" style="cursor: pointer;"></a>
+              <a href=""><img src="https://ecunion.ir/bundles/pouyasoft/home/img/namad.png" alt="ecunion" class="marginy-md" width="130" height="130" style="cursor: pointer;"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./app.js"></script>
     <script
       src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
