@@ -18,6 +18,7 @@ header {
 .offcanvas-header {
   height: 70px;
   padding-bottom: 50px !important;
+  position: relative;
 }
 .offcanvas-body ul {
   padding-right: 10px !important;
@@ -26,11 +27,11 @@ header {
   position: absolute;
   top: 30%;
   right: 0;
-  padding-right: 20px;
   z-index: 100000 !important;
   width: 300px !important;
   height: 20px;
   background: none;
+  transform: scale(0.9);
 }
 .menu-btn-1 {
   height: 32px;
@@ -395,27 +396,30 @@ video {
   font-size: 14px !important;
   color: rgb(64, 64, 64);
 }
-footer{
+footer {
   padding: 50px 90px !important;
   background: #fff;
 }
-footer .container .row .col-12:nth-child(1) a , footer .container .row .col-12:nth-child(1) a:hover{
+footer .container .row .col-12:nth-child(1) a,
+footer .container .row .col-12:nth-child(1) a:hover {
   color: rgb(64, 64, 64) !important;
   text-decoration: none;
   font-size: 100%;
-  margin:10px 15px;
+  margin: 10px 15px;
 }
-footer .container .row .col-12:nth-child(2) a , footer .container .row .col-12:nth-child(2) a:hover{
+footer .container .row .col-12:nth-child(2) a,
+footer .container .row .col-12:nth-child(2) a:hover {
   color: rgb(64, 64, 64) !important;
   text-decoration: none;
   font-size: 100%;
-  margin:10px;
+  margin: 10px;
 }
-footer .container .row .col-12:nth-child(3) a , footer .container .row .col-12:nth-child(3) a:hover{
+footer .container .row .col-12:nth-child(3) a,
+footer .container .row .col-12:nth-child(3) a:hover {
   color: rgb(64, 64, 64) !important;
   text-decoration: none;
   font-size: 100%;
-  margin-top:20px !important;
+  margin-top: 20px !important;
 }
 /* mobile */
 @media screen and (max-width: 700px) {
@@ -551,9 +555,8 @@ footer .container .row .col-12:nth-child(3) a , footer .container .row .col-12:n
   .headerof_section7 h2 {
     font-size: 28px !important;
   }
-  footer{
+  footer {
     padding: 50px 0px !important;
-    background-color: red;
   }
 }
 
