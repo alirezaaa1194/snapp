@@ -25,14 +25,14 @@ header {
 }
 .all-btn {
   position: absolute;
-  top: 30%;
-  right: 0 !important;
+  top: 35%;
+  right: -10px !important;
   z-index: 100000 !important;
   width: 300px !important;
   height: 20px;
   background: none;
   padding: 0px !important;
-  transform: scale(.82) !important;
+  transform: scale(.75) !important;
 }
 .menu-btn-1 {
   height: 32px;
@@ -388,6 +388,7 @@ main {
 video {
   border-radius: 9px !important;
   margin-top: 50px;
+  transform: scale(.9);
 }
 .section7_cardbox .card {
   display: flex;
@@ -566,6 +567,7 @@ margin: 10px 7px !important;
   }
   video {
     margin-top: 30px !important;
+    transform: scale(1);
   }
 
   .section7_cardbox .card {
@@ -740,6 +742,7 @@ margin: 10px 7px !important;
   }
   video {
     margin-top: 30px !important;
+    transform: scale(1);
   }
   .section7_cardbox .card {
     display: flex;
