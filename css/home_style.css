@@ -667,7 +667,7 @@ margin: 10px 7px !important;
   .cover {
     display: block;
     width: 100% !important;
-    height: 230px !important;
+    height: 180px !important;
     position: absolute !important;
     bottom: 0px !important;
     margin: 0px !important;
@@ -675,7 +675,7 @@ margin: 10px 7px !important;
       to top,
       rgba(255, 255, 255, 100%),
       rgba(255, 255, 255, 90%),
-      rgba(255, 255, 255, 45%),
+      rgba(255, 255, 255, 55%),
       rgba(255, 255, 255, 10%)
     );
   }
