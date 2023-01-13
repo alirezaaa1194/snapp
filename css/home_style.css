@@ -444,6 +444,16 @@ margin: 10px 7px !important;
   .navbar{
     padding:2px 0px !important;
   }
+  .nav-link{
+    margin-top: 15px;
+  }
+  .accordion-body span{
+    width: 100% !important;
+    justify-content: flex-start !important;
+  }
+  .accordion-body span a{
+    width: 100% !important;
+  }
   .manimage {
     background-position: center;
     height: 40vh !important;
@@ -487,7 +497,7 @@ margin: 10px 7px !important;
   }
   .section4 {
     transition: 1s;
-    height: 85vh;
+    height: 90vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -500,12 +510,13 @@ margin: 10px 7px !important;
   .cover {
     display: block;
     width: 100% !important;
-    height: 200px !important;
+    height: 120px !important;
     position: absolute !important;
     bottom: 0px !important;
     background: linear-gradient(
       to top,
-      rgba(255, 255, 255, 94%),
+      rgba(255, 255, 255, 100%),
+      rgba(255, 255, 255, 90%),
       rgba(255, 255, 255, 45%),
       rgba(255, 255, 255, 10%)
     );
