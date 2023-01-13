@@ -55,9 +55,11 @@ seemorebtn.addEventListener("click", function bgn() {
   cover.style.display = "none";
   section5.style.paddingTop = "30px";
 });
-if (screen.availWidth > 750 && screen.availWidth < 1100) {
+if (screen.availWidth > 750 && screen.availWidth < 1000) {
   container4.classList.remove("container");
   container4.classList.add("container-fluid");
+}
+if (screen.availWidth > 750 && screen.availWidth < 1400) {
   section5.classList.remove("container");
   section5.classList.add("container-fluid");
   container4.classList.remove("position-absolute");
@@ -66,7 +68,7 @@ if (screen.availWidth > 1100) {
   container4.classList.remove("position-absolute");
 }
 if (
-  screen.availWidth < 800 &&
+  screen.availWidth < 1000 &&
   window.matchMedia("(orientation:landscape)").matches
 ) {
   container4.classList.add("position-absolute");
@@ -74,6 +76,8 @@ if (
   section5.classList.add("container-fluid");
   section7.classList.remove("container");
   section7.classList.add("container-fluid");
+  container4.classList.add("container");
+  container4.classList.remove("container-fluid");
 }
 let offcanvas_counter = false;
 allbtn.addEventListener("click", function () {

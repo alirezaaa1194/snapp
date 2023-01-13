@@ -26,12 +26,13 @@ header {
 .all-btn {
   position: absolute;
   top: 30%;
-  right: 0;
+  right: 0 !important;
   z-index: 100000 !important;
   width: 300px !important;
   height: 20px;
   background: none;
-  transform: scale(0.9);
+  padding: 0px !important;
+  transform: scale(.82) !important;
 }
 .menu-btn-1 {
   height: 32px;
@@ -73,9 +74,11 @@ header {
   margin-top: 0;
   transform: rotate(-45deg);
 }
+.navbar{
+  padding: 10px 0px !important;
+}
 .nav-item .nav-link {
   font-size: 98%;
-  margin-top: 17px !important;
   color: #3f3f3f;
 }
 .span_in_ofcanvas {
@@ -230,11 +233,18 @@ main {
 }
 .section4 .row .col-4 {
   margin: 0px !important;
+  /* padding:0px 20px; */
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: start !important;
 }
 .section4 .row .col-4 a {
   text-decoration: none !important;
   background-color: #fff;
   border-radius: 18px !important;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100% !important;
 }
 .section4 .row .col-4 a h6 {
   color: black;
@@ -405,7 +415,7 @@ footer .container .row .col-12:nth-child(1) a:hover {
   color: rgb(64, 64, 64) !important;
   text-decoration: none;
   font-size: 100%;
-  margin: 10px 15px;
+  margin: 10px 8px;
 }
 footer .container .row .col-12:nth-child(2) a,
 footer .container .row .col-12:nth-child(2) a:hover {
@@ -421,8 +431,18 @@ footer .container .row .col-12:nth-child(3) a:hover {
   font-size: 100%;
   margin-top: 20px !important;
 }
+.footer_iconbar a{
+margin: 10px 7px !important;
+}
+.footer_iconbar a i{
+  color: rgb(64, 64, 64);
+  font-size: 25px;
+}
 /* mobile */
 @media screen and (max-width: 700px) {
+  .navbar{
+    padding:2px 0px !important;
+  }
   .manimage {
     background-position: center;
     height: 40vh !important;
@@ -447,6 +467,8 @@ footer .container .row .col-12:nth-child(3) a:hover {
     width: 100% !important;
     border-radius: 25px !important;
     margin: 0px !important;
+    height: 100% !important;
+    justify-content: space-evenly !important;
   }
   .section4 .row .col-4 a div {
     margin: 5px 0px;
@@ -457,6 +479,7 @@ footer .container .row .col-12:nth-child(3) a:hover {
   .section4 .row .col-4 a div h6 {
     text-align: center !important;
     margin: 8px 0px 8px 0px !important;
+    line-height: 25px;
   }
   .section4 .row .col-4 a img {
     margin: 0px !important;
@@ -558,9 +581,16 @@ footer .container .row .col-12:nth-child(3) a:hover {
   footer {
     padding: 50px 0px !important;
   }
+  /* .all-btn{
+    transform: scale(.8) !important;
+    background-color: red !important;
+  } */
 }
 
 @media screen and (max-width: 950px) and (orientation: landscape) {
+  .navbar{
+    padding: 5px 0px !important;
+  }
   .paragraph_box {
     padding: 20px !important;
   }
@@ -590,7 +620,7 @@ footer .container .row .col-12:nth-child(3) a:hover {
     transform: scale(0.85);
   }
   .section4 .row .col-4 a div h6 {
-    padding-bottom: 8px !important;
+    padding-bottom: 18px !important;
     font-size: 14px !important;
   }
   .section4 .row .col-4 a p {
@@ -780,9 +810,9 @@ footer .container .row .col-12:nth-child(3) a:hover {
   }
 }
 
-@media screen and (min-width: 750px) and (max-width: 1200px) and (orientation: landscape) {
+@media screen and (min-width: 750px) and (max-width: 1400px) and (orientation: landscape) {
   .cardsection {
-    margin-top: 130px;
+    margin-top: 150px;
   }
   .answer_allbox {
     min-height: 40vh;
