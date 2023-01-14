@@ -4,7 +4,7 @@
   .nav-item .active span{
     font-weight: bold !important;
   }
-  footer .container .row .col-12:nth-child(1) .active{
+  footer .container .row .col-12:nth-child(1) .active , footer .container .row .col-12:nth-child(1) .active:hover{
     color: #00d16f !important;
   }
 
