@@ -510,15 +510,14 @@ margin: 10px 7px !important;
   .cover {
     display: block;
     width: 100% !important;
-    height: 120px !important;
+    height: 95px !important;
     position: absolute !important;
     bottom: 0px !important;
     background: linear-gradient(
       to top,
       rgba(255, 255, 255, 100%),
-      rgba(255, 255, 255, 90%),
-      rgba(255, 255, 255, 45%),
       rgba(255, 255, 255, 10%)
+      
     );
   }
   .seemorebtn {
@@ -614,6 +613,13 @@ margin: 10px 7px !important;
     min-height: 90vh;
     background-position: center;
   }
+  .accordion-body span{
+    width: 100% !important;
+    justify-content: flex-start !important;
+  }
+  .accordion-body span a{
+    width: 100% !important;
+  }
   .section4 .container {
     width: 100% !important;
   }
@@ -647,7 +653,7 @@ margin: 10px 7px !important;
     margin: 8px 0px 8px 0px;
   }
   .section4 {
-    height: 160vh;
+    height: 175vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -667,16 +673,14 @@ margin: 10px 7px !important;
   .cover {
     display: block;
     width: 100% !important;
-    height: 180px !important;
+    height: 175px !important;
     position: absolute !important;
     bottom: 0px !important;
     margin: 0px !important;
     background: linear-gradient(
       to top,
       rgba(255, 255, 255, 100%),
-      rgba(255, 255, 255, 90%),
-      rgba(255, 255, 255, 55%),
-      rgba(255, 255, 255, 10%)
+      rgba(255, 255, 255, 0%)
     );
   }
   .seemorebtn {
@@ -773,6 +777,13 @@ margin: 10px 7px !important;
   .paragraph_box {
     padding: 30px !important;
   }
+  .accordion-body span{
+    width: 100% !important;
+    justify-content: flex-start !important;
+  }
+  .accordion-body span a{
+    width: 100% !important;
+  }
   .section4 .container {
     margin: 0px 15px !important;
     display: flex !important;
@@ -825,6 +836,13 @@ margin: 10px 7px !important;
 }
 
 @media screen and (min-width: 750px) and (max-width: 1400px) and (orientation: landscape) {
+  .accordion-body span{
+    width: 100% !important;
+    justify-content: flex-start !important;
+  }
+  .accordion-body span a{
+    width: 100% !important;
+  }
   .cardsection {
     margin-top: 150px;
   }
