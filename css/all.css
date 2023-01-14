@@ -1,7 +1,20 @@
 .nav-item .active{
-    color: #000 !important;
-    font-weight: bold !important;
+    color: #00d16f !important;
   }
   .nav-item .active span{
     font-weight: bold !important;
+  }
+  footer .container .row .col-12:nth-child(1) .active{
+    color: #00d16f !important;
+  }
+
+  .footer_iconbar{
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+  @media screen and (max-width:700px) {
+    .logo2{
+      position: relative;
+      z-index: 100000;
+    }
   }
