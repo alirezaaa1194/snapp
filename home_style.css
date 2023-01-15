@@ -26,10 +26,10 @@ header {
 .all-btn {
   position: absolute;
   top: 35%;
-  right: -10px !important;
+  right: 2% !important;
   z-index: 100000 !important;
-  width: 300px !important;
-  height: 20px;
+  width: auto;
+  height: auto;
   background: none;
   padding: 0px !important;
   transform: scale(0.75) !important;
@@ -308,6 +308,7 @@ main {
   font-size: 15px !important;
 }
 .section6 {
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: right;
@@ -343,9 +344,10 @@ main {
   height: 190px;
   /* align-self: center; */
 }
-.cardsection {
+/* .cardsection {
   bottom: 250px !important;
-}
+  margin-top: -120px !important;
+} */
 .section7 {
   background-color: #f2f5f8;
   padding: 45px 110px !important;
@@ -399,7 +401,7 @@ video {
   border-radius: 18px !important;
   height: 100% !important;
 }
-.b2{
+.b2 {
   text-align: right !important;
 }
 .section7_cardbox .card img {
@@ -441,15 +443,25 @@ footer .container .row .col-12:nth-child(3) a:hover {
   color: rgb(64, 64, 64);
   font-size: 25px;
 }
-@media screen and (min-width: 1000px){
-  .section6{
-    max-height: 110vh;
+@media screen and (min-width: 1000px) {
+  .section6 {
+    height: auto;
   }
-  .answer_allbox{
+  .cardsection {
+    /* bottom: 250px !important; */
+    margin-top: -120px !important;
+  }
+  .answer_allbox {
     min-height: 70vh !important;
   }
-  .section7 .container .row .row{
-    transform: scaleX(.9) !important;
+  .section7 .container .row .row {
+    transform: scaleX(0.9) !important;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .cardsection {
+    /* bottom: 250px !important; */
+    margin-top: 20px !important;
   }
 }
 /* mobile */
@@ -510,7 +522,7 @@ footer .container .row .col-12:nth-child(3) a:hover {
   }
   .section4 {
     transition: 1s;
-    height: 90vh;
+    height: 88vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -523,7 +535,7 @@ footer .container .row .col-12:nth-child(3) a:hover {
   .cover {
     display: block;
     width: 100% !important;
-    height: 60px !important;
+    height: 78px !important;
     position: absolute !important;
     bottom: 0px !important;
     background: linear-gradient(
@@ -665,7 +677,7 @@ footer .container .row .col-12:nth-child(3) a:hover {
     margin: 8px 0px 8px 0px;
   }
   .section4 {
-    height: 175vh;
+    height: 170vh;
     overflow: hidden;
     display: flex;
     justify-content: center;

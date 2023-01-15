@@ -12,6 +12,17 @@
     margin-top: 15px !important;
     margin-bottom: 15px !important;
   }
+  .all-btn {
+    position: absolute;
+    top: 35%;
+    right: 2% !important;
+    z-index: 100000 !important;
+    width: auto !important;
+    height: auto !important;
+    background: none;
+    padding: 0px !important;
+    transform: scale(0.75) !important;
+  }
   @media screen and (max-width:700px) {
     .logo2{
       position: relative;
